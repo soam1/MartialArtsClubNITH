@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.akashsoam.martialartsclubnith.MainActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/add_martial_art"
+        android:title="Add Martial Art"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/delete_martial_art"
+        android:title="Delete Martial Art"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/update_martial_art"
+        android:title="Update Martial Art"
+        app:showAsAction="ifRoom" />
 </menu>
