@@ -1,5 +1,7 @@
 package com.akashsoam.martialartsclubnith.model;
 
+import androidx.annotation.NonNull;
+
 public class MartialArt {
     private int martialArtID;
     private String martialArtName;
@@ -43,5 +45,11 @@ public class MartialArt {
 
     public void setMartialArtColor(String martialArtColor) {
         this.martialArtColor = martialArtColor;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return getMartialArtName() + "\n" + getMartialArtPrice() + "\n" + getMartialArtColor();
     }
 }
