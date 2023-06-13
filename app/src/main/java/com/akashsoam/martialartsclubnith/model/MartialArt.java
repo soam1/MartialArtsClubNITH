@@ -3,10 +3,10 @@ package com.akashsoam.martialartsclubnith.model;
 public class MartialArt {
     private int martialArtID;
     private String martialArtName;
-    private int martialArtPrice;
+    private double martialArtPrice;
     private String martialArtColor;
 
-    public MartialArt(int martialArtID, String martialArtName, int martialArtPrice, String martialArtColor) {
+    public MartialArt(int martialArtID, String martialArtName, double martialArtPrice, String martialArtColor) {
         this.martialArtID = martialArtID;
         this.martialArtName = martialArtName;
         this.martialArtPrice = martialArtPrice;
@@ -21,7 +21,7 @@ public class MartialArt {
         return martialArtName;
     }
 
-    public int getMartialArtPrice() {
+    public double getMartialArtPrice() {
         return martialArtPrice;
     }
 
@@ -37,7 +37,7 @@ public class MartialArt {
         this.martialArtName = martialArtName;
     }
 
-    public void setMartialArtPrice(int martialArtPrice) {
+    public void setMartialArtPrice(double martialArtPrice) {
         this.martialArtPrice = martialArtPrice;
     }
 
