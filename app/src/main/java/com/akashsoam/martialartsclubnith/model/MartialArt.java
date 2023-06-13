@@ -50,6 +50,6 @@ public class MartialArt {
     @NonNull
     @Override
     public String toString() {
-        return getMartialArtName() + "\n" + getMartialArtPrice() + "\n" + getMartialArtColor();
+        return martialArtID + "\n" +     getMartialArtName() + "\n" + getMartialArtPrice() + "\n" + getMartialArtColor();
     }
 }

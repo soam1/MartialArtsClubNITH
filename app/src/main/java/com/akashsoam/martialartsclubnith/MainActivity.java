@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //noinspection SimplifiableIfStatement
+        else if(id ==R.id.delete_martial_art){
+            Intent intent = new Intent(MainActivity.this, DeleteMartialArtActivity.class);
+            startActivity(intent);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
