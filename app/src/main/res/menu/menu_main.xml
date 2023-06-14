@@ -4,14 +4,14 @@
     tools:context="com.akashsoam.martialartsclubnith.MainActivity">
     <item
         android:id="@+id/add_martial_art"
-        android:title="Add Martial Art"
+        android:title="@string/add_martial_art"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/delete_martial_art"
-        android:title="Delete Martial Art"
+        android:title="@string/delete_martial_art"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/update_martial_art"
-        android:title="Update Martial Art"
+        android:title="@string/update_martial_art"
         app:showAsAction="ifRoom" />
 </menu>

@@ -9,10 +9,14 @@ public class MartialArt {
     private String martialArtColor;
 
     public MartialArt(int martialArtID, String martialArtName, double martialArtPrice, String martialArtColor) {
-        this.martialArtID = martialArtID;
-        this.martialArtName = martialArtName;
-        this.martialArtPrice = martialArtPrice;
-        this.martialArtColor = martialArtColor;
+//        this.martialArtID = martialArtID;
+//        this.martialArtName = martialArtName;
+//        this.martialArtPrice = martialArtPrice;
+//        this.martialArtColor = martialArtColor;
+        setMartialArtColor(martialArtColor);
+        setMartialArtID(martialArtID);
+        setMartialArtName(martialArtName);
+        setMartialArtPrice(martialArtPrice);
     }
 
     public int getMartialArtID() {
@@ -50,6 +54,6 @@ public class MartialArt {
     @NonNull
     @Override
     public String toString() {
-        return martialArtID + "\n" +     getMartialArtName() + "\n" + getMartialArtPrice() + "\n" + getMartialArtColor();
+        return martialArtID + "\n" + getMartialArtName() + "\n" + getMartialArtPrice() + "\n" + getMartialArtColor();
     }
 }

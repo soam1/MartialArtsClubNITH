@@ -55,7 +55,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void modifyMartialArtObject(int martialArtID, String martialArtName, double martialArtPrice, String martialArtColor) {
         SQLiteDatabase database = this.getWritableDatabase();
-        String updateMartialArtSQLCommand = "update " + MARTIAL_ARTS_TABLE + " set " + NAME_KEY + " = '" + martialArtName + "', " + PRICE_KEY + " = '" + martialArtPrice + "', " + COLOR_KEY + " = '" + martialArtColor + "' where" + ID_KEY + " = " + martialArtID;
+        String updateMartialArtSQLCommand = "update " + MARTIAL_ARTS_TABLE + " set " + NAME_KEY + " = '" + martialArtName + "', " + PRICE_KEY + " = '" + martialArtPrice + "', " + COLOR_KEY + " = '" + martialArtColor + "' where " + ID_KEY + " = " + martialArtID;
         database.execSQL(updateMartialArtSQLCommand);
         database.close();
 

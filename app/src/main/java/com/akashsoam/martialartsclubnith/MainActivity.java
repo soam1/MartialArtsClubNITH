@@ -3,6 +3,7 @@ package com.akashsoam.martialartsclubnith;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.akashsoam.martialartsclubnith.model.DatabaseHandler;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,11 +20,15 @@ import com.akashsoam.martialartsclubnith.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ScrollView;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    private DatabaseHandler mDatabaseHandler;
+    private double totalMartialArtsPrice;
+    private ScrollView mScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,10 +69,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
-
-        //noinspection SimplifiableIfStatement
-        else if(id ==R.id.delete_martial_art){
-            Intent intent = new Intent(MainActivity.this, DeleteMartialArtActivity.class);
+          //noinspection SimplifiableIfStatement
+        else if (id == R.id.delete_martial_art) {
+            Intent intent = new Intent(MainActivity .this, DeleteMartialArtActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.update_martial_art){
+            Intent intent = new Intent(MainActivity.this, UpdateMartialArtActivity.class);
             startActivity(intent);
             return true;
         }
