@@ -16,4 +16,5 @@
     <string name="add_martial_art">Add Martial Art</string>
     <string name="delete_martial_art">Delete Martial Art</string>
     <string name="update_martial_art">Update Martial Art</string>
+    <string name="reset_martial_art">Reset Martial Art</string>
 </resources>

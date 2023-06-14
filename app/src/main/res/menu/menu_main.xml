@@ -14,4 +14,8 @@
         android:id="@+id/update_martial_art"
         android:title="@string/update_martial_art"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/reset_martial_art"
+        android:title="@string/reset_martial_art"
+        app:showAsAction="ifRoom" />
 </menu>
